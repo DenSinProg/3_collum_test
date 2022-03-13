@@ -1,0 +1,160 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+.wraper {
+	margin-right: auto; 
+	margin-left:  auto; 
+	max-width: 960px;
+
+	display: flex;
+	flex-basis: 33.33%;
+	flex-direction: row;
+	justify-content: flex;
+	align-items: flex-end;
+	padding: 0 10px 0 10px;
+  }
+.block {
+	border-radius: 1%;
+	margin: 0px;
+	max-width: 320px;
+	min-width: 320px;
+	height: 430px;
+	display: flex-end;
+	flex-direction:column;
+	padding-left: 4%;
+}
+.picture {
+	margin-top: 30px;
+}
+.title {
+	margin-top: 30px;
+	text-transform:uppercase;
+	font-weight: 700;
+	font-size: 40px;
+	font-family: 'Big Shoulders Display';
+	color:hsl(0, 0%, 95%);
+}
+.text {
+	margin-top: 30px;
+	margin-right: 30px;
+	color:hsla(0, 0%, 100%, 0.75);
+	Font-size: 15px;
+	font-family: "Lexend Deca";
+	line-height:25px;
+}
+.button_orange {
+	font-size: 15px;
+	display: block;
+	letter-spacing: normal;
+	border: 2px solid hsl(0, 0%, 95%);;
+	border-radius: 20px;
+	margin-right: 140px;
+	margin-top:30px;
+	margin-bottom: 30px;
+	padding: 15px 25px 15px 25px;
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lexend Deca";
+	color: hsl(31, 77%, 52%);
+	border-color:hsl(0, 0%, 95%);
+	text-align: center;
+}
+.button_orange:hover {
+	background-color: hsl(31, 77%, 52%);
+	color: hsl(0, 0%, 95%);
+  }
+.button_suv {
+	font-size: 15px;
+	display: block;
+	letter-spacing: normal;
+	border: 2px solid hsl(0, 0%, 95%);;
+	border-radius: 20px;
+	margin-right: 140px;
+	margin-top:30px;
+	margin-bottom: 30px;
+	padding: 15px 25px 15px 25px;
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lexend Deca";
+	color: hsl(184, 100%, 22%);
+	border-color:hsl(0, 0%, 95%);
+	text-align: center;
+}
+.button_suv:hover {
+	background-color: hsl(184, 100%, 22%);
+	color: hsl(0, 0%, 95%);
+  }
+.button_luxury {
+	font-size: 15px;
+	display: block;
+	letter-spacing: normal;
+	border: 2px solid hsl(0, 0%, 95%);;
+	border-radius: 20px;
+	margin-right: 140px;
+	margin-top:30px;
+	margin-bottom: 30px;
+	padding: 15px 25px 15px 25px;
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lexend Deca";
+	color: hsl(179, 100%, 13%);
+	border-color:hsl(0, 0%, 95%);
+	text-align: center;
+}
+.button_luxury:hover {
+	background-color:hsl(179, 100%, 13%);
+	color: hsl(0, 0%, 95%);
+  }
+
+#block_suvs{
+	background-color: hsl(184, 100%, 22%);
+}
+#block_luxury{
+	background-color: hsl(179, 100%, 13%);
+
+}
+#block_sedan{
+	background-color: hsl(31, 77%, 52%);
+}
+@media(max-width: 375px) {
+	.wraper{
+		flex-direction:column;
+
+	}
+	
+ }
+
+
